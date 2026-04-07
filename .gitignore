@@ -1,0 +1,9 @@
+dir*/calc*/tmp_*/*.save
+log_files/*
+CRASH
+*.png
+*.hdf5
+!GI_SR_3.results.hdf5
+unklist*
+*/some_plot.py
+*.log

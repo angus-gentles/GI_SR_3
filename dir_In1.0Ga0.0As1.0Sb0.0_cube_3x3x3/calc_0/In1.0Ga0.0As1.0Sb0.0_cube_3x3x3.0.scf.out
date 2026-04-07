@@ -1,0 +1,356 @@
+
+     Program PWSCF v.7.3.1 starts on 29Mar2025 at 14:36:27 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+         "P. Giannozzi et al., J. Chem. Phys. 152 154105 (2020);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI), running on    32 processors
+
+     MPI processes distributed on     1 nodes
+     243567 MiB available memory on the printing compute node when the environment starts
+
+     Reading input from InAs.scf.in
+Warning: card &CELL ignored
+Warning: card / ignored
+
+     Current dimensions of program PWSCF are:
+     Max number of different atomic species (ntypx) = 50
+     Max number of k-points (npk) =  40000
+     Max angular momentum in pseudopotentials (lmaxx) =  4
+
+     K-points division:     npool     =       2
+     R & G space division:  proc/nbgrp/npool/nimage =      16
+     Subspace diagonalization in iterative solution of the eigenvalue problem:
+     a serial algorithm will be used
+
+
+     Parallelization info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Min         137     137     38                 4220     4220     635
+     Max         138     138     40                 4221     4221     637
+     Sum        2197    2197    625                67529    67529   10177
+
+     Using Slab Decomposition
+
+
+
+     bravais-lattice index     =            2
+     lattice parameter (alat)  =      11.5040  a.u.
+     unit-cell volume          =     380.6176 (a.u.)^3
+     number of atoms/cell      =            2
+     number of atomic types    =            2
+     number of electrons       =        28.00
+     number of Kohn-Sham states=           20
+     kinetic-energy cutoff     =     120.0000  Ry
+     charge density cutoff     =     480.0000  Ry
+     scf convergence threshold =      5.0E-07
+     mixing beta               =       0.7000
+     number of iterations used =            8  plain     mixing
+     Exchange-correlation= PBE
+                           (   1   4   3   4   0   0   0)
+     Hubbard projectors: atomic
+     Hubbard parameters of DFT+U (Dudarev formulation) in eV:
+     U(As-4p) =  3.2600
+     U(In-5p) = -0.9300
+
+     Internal variables: lda_plus_u =T, lda_plus_u_kind = 0
+
+     celldm(1)=  11.504020  celldm(2)=   0.000000  celldm(3)=   0.000000
+     celldm(4)=   0.000000  celldm(5)=   0.000000  celldm(6)=   0.000000
+
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = (  -0.500000   0.000000   0.500000 )  
+               a(2) = (   0.000000   0.500000   0.500000 )  
+               a(3) = (  -0.500000   0.500000   0.000000 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+               b(1) = ( -1.000000 -1.000000  1.000000 )  
+               b(2) = (  1.000000  1.000000  1.000000 )  
+               b(3) = ( -1.000000  1.000000 -1.000000 )  
+
+
+     PseudoPot. # 1 for As read from file:
+     /work/i254/i254/gentles/data/pseudos/As.pbe.NC-SR.standard.v0.5.UPF
+     MD5 check sum: bfe1a874457ce592347346129958e7cf
+     Pseudo is Norm-conserving + core correction, Zval = 15.0
+     Generated using ONCVPSP code by D. R. Hamann
+     Using radial grid of 1358 points,  6 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+                l(5) =   2
+                l(6) =   2
+
+     PseudoPot. # 2 for In read from file:
+     /work/i254/i254/gentles/data/pseudos/In.pbe.NC-SR.standard.v0.5.UPF
+     MD5 check sum: 835f4bf908c982ff75c88e16816a8d7f
+     Pseudo is Norm-conserving + core correction, Zval = 13.0
+     Generated using ONCVPSP code by D. R. Hamann
+     Using radial grid of 1964 points,  6 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+                l(5) =   2
+                l(6) =   2
+
+     atomic species   valence    mass     pseudopotential
+     As               15.00    74.92160     As( 1.00)
+     In               13.00   114.81800     In( 1.00)
+
+     24 Sym. Ops. (no inversion) found
+
+
+
+   Cartesian axes
+
+     site n.     atom                  positions (alat units)
+         1        In     tau(   1) = (   0.0000000   0.0000000   0.0000000  )
+         2        As     tau(   2) = (  -0.2500000   0.2500000   0.2500000  )
+
+     number of k points=   145
+
+     Number of k-points >= 100: set verbosity='high' to print them.
+
+     Dense  grid:    67529 G-vectors     FFT dimensions: (  60,  60,  60)
+
+     Estimated max dynamical RAM per process >      22.91 MB
+
+     Estimated total dynamical RAM >     716.56 MB
+
+     Initial potential from superposition of free atoms
+
+     starting charge      27.9959, renormalised to      28.0000
+
+     STARTING HUBBARD OCCUPATIONS:
+
+     =================== HUBBARD OCCUPATIONS ===================
+     ------------------------ ATOM    1 ------------------------
+     Tr[ns(  1)] =   1.00000
+     eigenvalues:
+       0.167  0.167  0.167
+     eigenvectors (columns):
+       1.000  0.000  0.000
+       0.000  1.000  0.000
+       0.000  0.000  1.000
+     occupation matrix ns (before diag.):
+       0.167  0.000  0.000
+       0.000  0.167  0.000
+       0.000  0.000  0.167
+     ------------------------ ATOM    2 ------------------------
+     Tr[ns(  2)] =   3.00000
+     eigenvalues:
+       0.500  0.500  0.500
+     eigenvectors (columns):
+       1.000  0.000  0.000
+       0.000  1.000  0.000
+       0.000  0.000  1.000
+     occupation matrix ns (before diag.):
+       0.500  0.000  0.000
+       0.000  0.500  0.000
+       0.000  0.000  0.500
+
+     Number of occupied Hubbard levels =    4.0000
+
+     Atomic wfc used for Hubbard projectors are NOT orthogonalized
+
+     Starting wfcs are   18 randomized atomic wfcs +    2 random wfcs
+
+     total cpu time spent up to now is        2.4 secs
+
+     per-process dynamical memory:    26.0 Mb
+
+     Self-consistent Calculation
+
+     iteration #  1     ecut=   120.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  1.00E-02,  avg # of iterations =  5.3
+
+     =================== HUBBARD OCCUPATIONS ===================
+     ------------------------ ATOM    1 ------------------------
+     Tr[ns(  1)] =   4.05345
+     eigenvalues:
+       0.676  0.676  0.676
+     eigenvectors (columns):
+       0.500 -0.467  0.730
+       0.753 -0.181 -0.632
+       0.427  0.866  0.261
+     occupation matrix ns (before diag.):
+       0.676 -0.000  0.000
+      -0.000  0.676 -0.000
+       0.000 -0.000  0.676
+     ------------------------ ATOM    2 ------------------------
+     Tr[ns(  2)] =   5.40029
+     eigenvalues:
+       0.900  0.900  0.900
+     eigenvectors (columns):
+       0.685 -0.402  0.607
+       0.686  0.078 -0.723
+       0.244  0.912  0.330
+     occupation matrix ns (before diag.):
+       0.900 -0.000  0.000
+      -0.000  0.900 -0.000
+       0.000 -0.000  0.900
+
+     Number of occupied Hubbard levels =    9.4537
+
+     Threshold (ethr) on eigenvalues was too large:
+     Diagonalizing with lowered threshold
+
+     Davidson diagonalization with overlap
+     ethr =  2.15E-04,  avg # of iterations =  3.1
+
+     total cpu time spent up to now is       10.8 secs
+
+     total energy              =    -345.03762226 Ry
+     estimated scf accuracy    <       0.05917986 Ry
+
+     iteration #  2     ecut=   120.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  2.11E-04,  avg # of iterations =  2.4
+
+     total cpu time spent up to now is       14.8 secs
+
+     total energy              =    -345.04601135 Ry
+     estimated scf accuracy    <       0.00361945 Ry
+
+     iteration #  3     ecut=   120.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     c_bands:  1 eigenvalues not converged
+     ethr =  1.29E-05,  avg # of iterations =  6.1
+
+     total cpu time spent up to now is       19.6 secs
+
+     total energy              =    -345.04652066 Ry
+     estimated scf accuracy    <       0.00022687 Ry
+
+     iteration #  4     ecut=   120.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  8.10E-07,  avg # of iterations =  3.4
+
+     total cpu time spent up to now is       24.0 secs
+
+     total energy              =    -345.04656425 Ry
+     estimated scf accuracy    <       0.00001977 Ry
+
+     iteration #  5     ecut=   120.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  7.06E-08,  avg # of iterations =  2.8
+
+     total cpu time spent up to now is       27.8 secs
+
+     total energy              =    -345.04656936 Ry
+     estimated scf accuracy    <       0.00000736 Ry
+
+     iteration #  6     ecut=   120.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  2.63E-08,  avg # of iterations =  2.1
+
+     total cpu time spent up to now is       31.4 secs
+
+     End of self-consistent calculation
+
+     =================== HUBBARD OCCUPATIONS ===================
+     ------------------------ ATOM    1 ------------------------
+     Tr[ns(  1)] =   4.05177
+     eigenvalues:
+       0.675  0.675  0.675
+     eigenvectors (columns):
+       0.703  0.323 -0.633
+       0.687 -0.078  0.723
+       0.184 -0.943 -0.277
+     occupation matrix ns (before diag.):
+       0.675 -0.000  0.000
+      -0.000  0.675 -0.000
+       0.000 -0.000  0.675
+     ------------------------ ATOM    2 ------------------------
+     Tr[ns(  2)] =   5.39691
+     eigenvalues:
+       0.899  0.899  0.899
+     eigenvectors (columns):
+       0.700 -0.395  0.595
+       0.685  0.137 -0.715
+       0.201  0.909  0.366
+     occupation matrix ns (before diag.):
+       0.899 -0.000  0.000
+      -0.000  0.899 -0.000
+       0.000 -0.000  0.899
+
+     Number of occupied Hubbard levels =    9.4487
+
+     Number of k-points >= 100: set verbosity='high' to print the bands.
+
+     highest occupied, lowest unoccupied level (ev):     7.1454    7.5617
+
+!    total energy              =    -345.04657105 Ry
+     estimated scf accuracy    <       0.00000016 Ry
+
+     The total energy is the sum of the following terms:
+     one-electron contribution =    -178.93606266 Ry
+     hartree contribution      =     105.73704143 Ry
+     xc contribution           =     -87.65451830 Ry
+     ewald contribution        =    -184.21305644 Ry
+     Hubbard energy            =       0.02002493 Ry
+
+     convergence has been achieved in   6 iterations
+
+     Writing all to output data dir tmp/scf/InAs.save/ :
+     XML data file, charge density, pseudopotentials, collected wavefunctions
+
+     init_run     :      1.80s CPU      1.87s WALL (       1 calls)
+     electrons    :     28.33s CPU     29.03s WALL (       1 calls)
+
+     Called by init_run:
+     wfcinit      :      1.21s CPU      1.24s WALL (       1 calls)
+     potinit      :      0.03s CPU      0.04s WALL (       1 calls)
+     hinit0       :      0.50s CPU      0.51s WALL (       1 calls)
+
+     Called by electrons:
+     c_bands      :     24.44s CPU     25.02s WALL (       7 calls)
+     sum_band     :      3.77s CPU      3.81s WALL (       7 calls)
+     v_of_rho     :      0.11s CPU      0.12s WALL (       7 calls)
+     mix_rho      :      0.01s CPU      0.01s WALL (       7 calls)
+
+     Called by c_bands:
+     init_us_2    :      0.56s CPU      0.59s WALL (    1168 calls)
+     cegterg      :     22.42s CPU     22.74s WALL (     511 calls)
+
+     Called by *egterg:
+     cdiaghg      :      1.97s CPU      1.99s WALL (    2342 calls)
+     h_psi        :     18.98s CPU     19.27s WALL (    2488 calls)
+     g_psi        :      0.05s CPU      0.05s WALL (    1904 calls)
+
+     Called by h_psi:
+     h_psi:calbec :      0.79s CPU      0.80s WALL (    2488 calls)
+     vloc_psi     :     17.12s CPU     17.39s WALL (    2488 calls)
+     add_vuspsi   :      0.55s CPU      0.56s WALL (    2488 calls)
+     vhpsi        :      0.35s CPU      0.36s WALL (    2488 calls)
+
+     General routines
+     calbec       :      1.09s CPU      1.11s WALL (    5560 calls)
+     fft          :      0.49s CPU      0.50s WALL (      71 calls)
+     ffts         :      0.01s CPU      0.01s WALL (       7 calls)
+     fftw         :     18.08s CPU     18.33s WALL (   64052 calls)
+
+     Parallel routines
+
+     Hubbard U routines
+     new_ns       :      0.12s CPU      0.13s WALL (       7 calls)
+     vhpsi        :      0.35s CPU      0.36s WALL (    2488 calls)
+
+     PWSCF        :     30.79s CPU     35.95s WALL
+
+
+   This run was terminated on:  14:37: 3  29Mar2025            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=
